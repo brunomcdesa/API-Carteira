@@ -1,13 +1,12 @@
-const mysql = require('mysql')
+const mysql = require('mysql'); // chamando um arquivo js 
 
-// CRIACAO DE CONEXAO COM BANCO DE DADOS
 const conexao = mysql.createConnection({
-
     host:"localhost",
     user:"root",
     password:"",
     port:3306,
     database:"apicarteira"
 })
-
+// é pra torna visivel essa conexao quando chamar 
+//a variavel conexao
 module.exports = conexao
